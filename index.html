@@ -1,23 +1,26 @@
 <html>
-<head>
-<title>Home | Hampton Moore</title>
-<meta charset="utf-8"/>
-<link rel='stylesheet' type='text/css' href='style.css'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <title>Home | Hampton Moore</title>
+        <meta charset="utf-8"/>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function update(){document.documentElement.style.setProperty("--background",localStorage.getItem("background")),document.documentElement.style.setProperty("--text",localStorage.getItem("text"))}function dark(){localStorage.setItem("background","#1e232b"),localStorage.setItem("text","#f5f5f5"),update()}function light(){localStorage.setItem("background","#f5f5f5"),localStorage.setItem("text","#1e232b"),update()}window.addEventListener("load",()=>{null!==localStorage.getItem("background")&&null!==localStorage.getItem("text")&&update()});
+        </script>
+    </head>
+    <body>
+    <h1 class="header">Hampton Moore</h1>
+    <div><a href="https://github.com/herohamp/">Github</a> | <a href="https://twitter.com/herohamp>">Twitter</a> | <a href="./rss.xml">RSS</a></div>
+    <p>Welcome to my tiny spot on the internet, a small minimalistic statically generated blog.</p>
+    <p><span onclick="light()">Light Mode</span> - <span onclick="dark()">Dark Mode</span></p>
+    <hr>
 
-<body>
-<h1 class="header">Hampton Moore</h1>
-<div><a href="https://github.com/herohamp/">Github</a> | <a href="https://twitter.com/herohamp>">Twitter</a> | <a href="./rss.xml">RSS</a></div>
-<p>Welcome to my tiny spot on the internet, a small minimalistic statically generated blog.</p>
-<hr>
-
-<ul>
-<!-- LB -->
-<li>2020 Feb 13 &ndash; <a href="blog/switching-to-lb.html">Switching to lb</a></li>
-<li>2020 Feb 13 &ndash; <a href="blog/added-a-rebuild-feature-to-lb.html">Added a rebuild feature to lb</a></li>
+    <ul>
+    <!-- LB -->
+    <li>2020 Feb 13 &ndash; <a href="blog/switching-to-lb.html">Switching to lb</a></li>
+    <li>2020 Feb 13 &ndash; <a href="blog/added-a-rebuild-feature-to-lb.html">Added a rebuild feature to lb</a></li>
 
 
-</body>
+    </body>
 </html>
 
